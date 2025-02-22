@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { createContext, useEffect, useState } from "react";
 
-const RoomContext = () => {
-  return <div>RoomContext</div>;
+// data
+import { roomData } from "../data";
+
+// Create context
+export const RoomContext = createContext();
+
+const RoomProvider = ({ children }) => {
+  const [rooms, setRooms] = useState(roomData);
+  return (
+    <RoomContext.Provider value={{ rooms }}>{children}</RoomContext.Provider>
+  );
 };
 
-export default RoomContext;
+export default RoomProvider;
