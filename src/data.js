@@ -1,20 +1,20 @@
 // rooms images
-import Room1Img from './assets/img/rooms/1.png';
-import Room1ImgLg from './assets/img/rooms/1-lg.png';
-import Room2Img from './assets/img/rooms/2.png';
-import Room2ImgLg from './assets/img/rooms/2-lg.png';
-import Room3Img from './assets/img/rooms/3.png';
-import Room3ImgLg from './assets/img/rooms/3-lg.png';
-import Room4Img from './assets/img/rooms/4.png';
-import Room4ImgLg from './assets/img/rooms/4-lg.png';
-import Room5Img from './assets/img/rooms/5.png';
-import Room5ImgLg from './assets/img/rooms/5-lg.png';
-import Room6Img from './assets/img/rooms/6.png';
-import Room6ImgLg from './assets/img/rooms/6-lg.png';
-import Room7Img from './assets/img/rooms/7.png';
-import Room7ImgLg from './assets/img/rooms/7-lg.png';
-import Room8Img from './assets/img/rooms/8.png';
-import Room8ImgLg from './assets/img/rooms/8-lg.png';
+import Room1Img from "./assets/img/rooms/1.png";
+import Room1ImgLg from "./assets/img/rooms/1-lg.png";
+import Room2Img from "./assets/img/rooms/2.png";
+import Room2ImgLg from "./assets/img/rooms/2-lg.png";
+import Room3Img from "./assets/img/rooms/3.png";
+import Room3ImgLg from "./assets/img/rooms/3-lg.png";
+import Room4Img from "./assets/img/rooms/4.png";
+import Room4ImgLg from "./assets/img/rooms/4-lg.png";
+import Room5Img from "./assets/img/rooms/5.png";
+import Room5ImgLg from "./assets/img/rooms/5-lg.png";
+import Room6Img from "./assets/img/rooms/6.png";
+import Room6ImgLg from "./assets/img/rooms/6-lg.png";
+import Room7Img from "./assets/img/rooms/7.png";
+import Room7ImgLg from "./assets/img/rooms/7-lg.png";
+import Room8Img from "./assets/img/rooms/8.png";
+import Room8ImgLg from "./assets/img/rooms/8-lg.png";
 // import icons
 import {
   FaWifi,
@@ -25,86 +25,76 @@ import {
   FaHotdog,
   FaStopwatch,
   FaCocktail,
-} from 'react-icons/fa';
+  FaWheelchair,
+} from "react-icons/fa";
 
 export const roomData = [
   {
     id: 1,
-    name: 'Superior Room',
+    name: "Røsheim",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
     facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
+      { name: "Wifi", icon: <FaWifi /> },
+      { name: "Kaffe", icon: <FaCoffee /> },
+      { name: "Bad", icon: <FaBath /> },
+      { name: "Parkeringsplass", icon: <FaParking /> },
+      { name: "Tilrettelagt for rullestol", icon: <FaWheelchair /> },
     ],
-    size: 30,
-    maxPerson: 1,
-    price: 115,
+    size: 80,
+    maxPerson: 18,
+    price: 2500,
     image: Room1Img,
     imageLg: Room1ImgLg,
   },
   {
     id: 2,
-    name: 'Signature Room',
+    name: "Midtgard",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
     facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
+      { name: "Wifi", icon: <FaWifi /> },
+      { name: "Kaffe", icon: <FaCoffee /> },
+      { name: "Bad", icon: <FaBath /> },
+      { name: "Parkeringsplass", icon: <FaParking /> },
     ],
-    size: 70,
-    maxPerson: 2,
-    price: 220,
+    size: 65,
+    maxPerson: 8,
+    price: 2200,
     image: Room2Img,
     imageLg: Room2ImgLg,
   },
   {
     id: 3,
-    name: 'Deluxe Room',
+    name: "Olabu",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
     facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
+      { name: "Wifi", icon: <FaWifi /> },
+      { name: "Kaffe", icon: <FaCoffee /> },
+      { name: "Bad", icon: <FaBath /> },
+      { name: "Parkeringsplass", icon: <FaParking /> },
     ],
-    size: 50,
-    maxPerson: 3,
-    price: 265,
+    size: 70,
+    maxPerson: 7,
+    price: 2650,
     image: Room3Img,
     imageLg: Room3ImgLg,
   },
   {
     id: 4,
-    name: 'Luxury Room',
+    name: "Luxury Room",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
     facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
+      { name: "Wifi", icon: <FaWifi /> },
+      { name: "Coffee", icon: <FaCoffee /> },
+      { name: "Bath", icon: <FaBath /> },
+      { name: "Parking Space", icon: <FaParking /> },
+      { name: "Swimming Pool", icon: <FaSwimmingPool /> },
+      { name: "Breakfast", icon: <FaHotdog /> },
+      { name: "GYM", icon: <FaStopwatch /> },
+      { name: "Drinks", icon: <FaCocktail /> },
     ],
     size: 50,
     maxPerson: 4,
@@ -114,18 +104,18 @@ export const roomData = [
   },
   {
     id: 5,
-    name: 'Luxury Suite Room',
+    name: "Luxury Suite Room",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
     facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
+      { name: "Wifi", icon: <FaWifi /> },
+      { name: "Coffee", icon: <FaCoffee /> },
+      { name: "Bath", icon: <FaBath /> },
+      { name: "Parking Space", icon: <FaParking /> },
+      { name: "Swimming Pool", icon: <FaSwimmingPool /> },
+      { name: "Breakfast", icon: <FaHotdog /> },
+      { name: "GYM", icon: <FaStopwatch /> },
+      { name: "Drinks", icon: <FaCocktail /> },
     ],
     size: 90,
     maxPerson: 5,
@@ -135,18 +125,18 @@ export const roomData = [
   },
   {
     id: 6,
-    name: 'Deluxe Room',
+    name: "Deluxe Room",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
     facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
+      { name: "Wifi", icon: <FaWifi /> },
+      { name: "Coffee", icon: <FaCoffee /> },
+      { name: "Bath", icon: <FaBath /> },
+      { name: "Parking Space", icon: <FaParking /> },
+      { name: "Swimming Pool", icon: <FaSwimmingPool /> },
+      { name: "Breakfast", icon: <FaHotdog /> },
+      { name: "GYM", icon: <FaStopwatch /> },
+      { name: "Drinks", icon: <FaCocktail /> },
     ],
     size: 45,
     maxPerson: 6,
@@ -156,18 +146,18 @@ export const roomData = [
   },
   {
     id: 7,
-    name: 'Luxury Room',
+    name: "Luxury Room",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea ccusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea ccusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
     facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
+      { name: "Wifi", icon: <FaWifi /> },
+      { name: "Coffee", icon: <FaCoffee /> },
+      { name: "Bath", icon: <FaBath /> },
+      { name: "Parking Space", icon: <FaParking /> },
+      { name: "Swimming Pool", icon: <FaSwimmingPool /> },
+      { name: "Breakfast", icon: <FaHotdog /> },
+      { name: "GYM", icon: <FaStopwatch /> },
+      { name: "Drinks", icon: <FaCocktail /> },
     ],
     size: 84,
     maxPerson: 7,
@@ -177,18 +167,18 @@ export const roomData = [
   },
   {
     id: 8,
-    name: 'Deluxe Room',
+    name: "Deluxe Room",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
     facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
+      { name: "Wifi", icon: <FaWifi /> },
+      { name: "Coffee", icon: <FaCoffee /> },
+      { name: "Bath", icon: <FaBath /> },
+      { name: "Parking Space", icon: <FaParking /> },
+      { name: "Swimming Pool", icon: <FaSwimmingPool /> },
+      { name: "Breakfast", icon: <FaHotdog /> },
+      { name: "GYM", icon: <FaStopwatch /> },
+      { name: "Drinks", icon: <FaCocktail /> },
     ],
     size: 48,
     maxPerson: 8,
