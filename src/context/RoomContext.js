@@ -24,6 +24,7 @@ const RoomProvider = ({ children }) => {
     });
     setRooms(newRooms);
   };
+
   return (
     <RoomContext.Provider
       value={{ rooms, adults, setAdults, kids, setKids, handleClick }}>
