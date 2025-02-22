@@ -27,6 +27,7 @@ const RoomDetails = () => {
   const { name, description, facilities, imageLg, price } = room;
   return (
     <section>
+      <ScrollToTop />
       {/* banner */}
       <div className='bg-room bg-cover bg-center h-[560px] relative flex justify-center items-center'>
         {/*Overlay*/}
