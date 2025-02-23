@@ -1,27 +1,29 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import HeroSlider from "../components/HeroSlider";
 
 const Contact = () => {
   const form = useRef(null);
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_zkl7hev",
+        "template_u76y4zd",
         form.current,
-        "YOUR_TEMPLATE_ID"
+        "jzi6WEzjNkT3qtZHA"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setSuccess(true);
         },
         (error) => {
-          console.log(error.text);
+          setError(true);
         }
       );
   };
@@ -116,6 +118,8 @@ const Contact = () => {
                     className='btn btn-primary rounded-lg h-16 w-full'>
                     Send
                   </motion.button>
+                  {error && "En feil har oppstått"}
+                  {success && "Takk for din henvendelse"}
                 </div>
               </div>
             </div>
