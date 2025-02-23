@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 //Logo
 import LogoWhite from "../assets/img/Logo_new_no_background.png";
 import LogoDark from "../assets/img/Logo_new_no_background.png";
+import Contact from "../pages/Contact";
 
 const Header = () => {
   const [header, setHeader] = useState(false);
@@ -33,10 +34,11 @@ const Header = () => {
             Hjem
           </a>
 
-          <a href='' className='hover:text-accent transition'>
+          <a href='/' className='hover:text-accent transition'>
             Fasiliteter
           </a>
-          <a href='' className='hover:text-accent transition'>
+
+          <a href='/Contact' className='hover:text-accent transition'>
             Kontakt
           </a>
         </nav>
