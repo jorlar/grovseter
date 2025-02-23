@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 //Logo
 import LogoWhite from "../assets/img/Logo_new_no_background.png";
 import LogoDark from "../assets/img/Logo_new_no_background.png";
-import Contact from "../pages/Contact";
 
 const Header = () => {
   const [header, setHeader] = useState(false);
@@ -20,9 +19,9 @@ const Header = () => {
         {/*logo*/}
         <a href='/'>
           {header ? (
-            <img className='w-[100px]' src={LogoDark} />
+            <img className='w-[100px]' src={LogoDark} alt='' />
           ) : (
-            <img className='w-[100px]' src={LogoWhite} />
+            <img className='w-[100px]' src={LogoWhite} alt='' />
           )}
         </a>
         {/*NAV */}
@@ -32,6 +31,9 @@ const Header = () => {
           } flex gap-x-4 font-tertiary tracking-[3px] text-[15px] items-center uppercase lg:gap-x-8`}>
           <a href='/' className='hover:text-accent transition'>
             Hjem
+          </a>
+          <a href='/About' className='hover:text-accent transition'>
+            Om Oss
           </a>
 
           <a href='/' className='hover:text-accent transition'>

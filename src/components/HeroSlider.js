@@ -15,17 +15,14 @@ const slides = [
   {
     title: "Fjellhytter i Valdres",
     bg: Img1,
-    btnText: "Se hyttene våre",
   },
   {
     title: "Fjellhytter i Valdres",
     bg: Img2,
-    btnText: "Se hyttene våre",
   },
   {
     title: "Fjellhytter i Valdres",
     bg: Img3,
-    btnText: "Se hyttene våre",
   },
 ];
 const HeroSlider = () => {
@@ -41,7 +38,7 @@ const HeroSlider = () => {
       className='heroSlider h-[600px] lg:h-[860px]'>
       {slides.map((slide, index) => {
         // destructure slide
-        const { title, bg, btnText } = slide;
+        const { title, bg } = slide;
         return (
           <SwiperSlide
             className='h-full relative flex justify-center items-center'
@@ -53,9 +50,6 @@ const HeroSlider = () => {
               <h1 className='text-[32px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px] leading-tight mb-6 '>
                 {title}
               </h1>
-              <button className='btn btn-lg btn-primary mx-auto'>
-                {btnText}
-              </button>
             </div>
             <div className='absolute top-0 w-full h-full'>
               <img className='object-cover h-full w-full' src={bg} alt='' />

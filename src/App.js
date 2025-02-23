@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 // Pages
 import Home from "./pages/Home";
 import RoomDetails from "./pages/RoomDetails";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 // React Router
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/room/:id",
     element: <RoomDetails />,
+  },
+  {
+    path: "/About",
+    element: <About />,
   },
   {
     path: "/Contact",
