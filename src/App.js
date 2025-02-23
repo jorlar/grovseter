@@ -1,5 +1,8 @@
 import React from "react";
 
+// Vercel Monitor
+import { Analytics } from "@vercel/analytics/react";
+
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -42,6 +45,7 @@ const App = () => {
     <div>
       <Header />
       <RouterProvider router={router} />
+      <Analytics />
       <Footer />
     </div>
   );
