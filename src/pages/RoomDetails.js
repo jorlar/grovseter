@@ -47,7 +47,11 @@ const RoomDetails = () => {
             {/* Facilities */}
             <div className='mt-12'>
               <h3 className='h3 mb-3'>Fasiliteter i hytta</h3>
-              <p className='mb-12 '> MASSE rare fasiliteter</p>
+              <p className='mb-12 '>
+                {" "}
+                Her kan vi legge inn mer generell info om fasiliteter på
+                hyttene. Feks peisovn, sofakrok etc
+              </p>
               {/* Grid */}
               <div className='grid grid-cols-3 gap-6 mb-12'>
                 {facilities.map((item, index) => {

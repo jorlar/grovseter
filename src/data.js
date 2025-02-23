@@ -18,9 +18,9 @@ import {
 export const roomData = [
   {
     id: 1,
-    name: "Røsheim",
+    name: "Røisheim",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "Røisheim har 6 soverom, hvorav 3 med dobbeltseng, 3 med enkeltseng og en familiekøye. Totalt er det 18 sengeplasser på hytta. 1 bad med WC, og et separat WC. Vaskemaskin og tørketrommel samt godt utstyrt kjøkken med oppvaskmaskin, microbølgeovn etc. Hytta disponerer stor parkeringsplass og har rullestolrampe. Alle våre hytter har innlagt fiber og TV fra Telia. Pakker med sengetøy og håndklær kan leies eller medbringes selv",
     facilities: [
       { name: "Wifi", icon: <FaWifi /> },
       { name: "Kaffe", icon: <FaCoffee /> },
@@ -38,7 +38,7 @@ export const roomData = [
     id: 2,
     name: "Midtgard",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "Midtgard har 3 soverom, hvorav 1 med dobbeltseng, 1 med køyeseng og 1 med familiekøye. Totalt er det 8 sengeplasser på hytta. 1 bad med WC, og et separat WC. Vaskemaskin og tørketrommel samt godt utstyrt kjøkken med oppvaskmaskin, microbølgeovn etc. Hytta disponerer stor parkeringsplass. Alle våre hytter har innlagt fiber og TV fra Telia. Pakker med sengetøy og håndklær kan leies eller medbringes selv",
     facilities: [
       { name: "Wifi", icon: <FaWifi /> },
       { name: "Kaffe", icon: <FaCoffee /> },
@@ -55,7 +55,7 @@ export const roomData = [
     id: 3,
     name: "Olabu",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.",
+      "Olabu har 2 soverom, hvorav 1 med dobbeltseng og 1 med familiekøye. Totalt er det 7 sengeplasser på hytta. 1 bad med WC, Vaskemaskin og tørketrommel samt godt utstyrt kjøkken med oppvaskmaskin, microbølgeovn etc. Hytta disponerer stor parkeringsplass. Alle våre hytter har innlagt fiber og TV fra Telia. Pakker med sengetøy og håndklær kan leies eller medbringes selv",
     facilities: [
       { name: "Wifi", icon: <FaWifi /> },
       { name: "Kaffe", icon: <FaCoffee /> },

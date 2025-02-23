@@ -32,9 +32,7 @@ const Header = () => {
           <a href='/' className='hover:text-accent transition'>
             Hjem
           </a>
-          <a href='' className='hover:text-accent transition'>
-            Hytter
-          </a>
+
           <a href='' className='hover:text-accent transition'>
             Fasiliteter
           </a>
