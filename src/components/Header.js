@@ -36,7 +36,7 @@ const Header = () => {
             Om Oss
           </a>
 
-          <a href='/' className='hover:text-accent transition'>
+          <a href='/Facilities' className='hover:text-accent transition'>
             Fasiliteter
           </a>
 

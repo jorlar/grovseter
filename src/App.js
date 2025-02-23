@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 // Pages
 import Home from "./pages/Home";
 import RoomDetails from "./pages/RoomDetails";
+import Facilities from "./pages/Facilities";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/room/:id",
     element: <RoomDetails />,
+  },
+  {
+    path: "/Facilities",
+    element: <Facilities />,
   },
   {
     path: "/About",
