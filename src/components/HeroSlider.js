@@ -35,7 +35,7 @@ const HeroSlider = () => {
         delay: 3000,
         disableOnInteraction: false,
       }}
-      className='heroSlider h-[600px] lg:h-[860px]'>
+      className='heroSlider h-[600px] lg:h-[860px] md:h-[250px]'>
       {slides.map((slide, index) => {
         // destructure slide
         const { title, bg } = slide;
