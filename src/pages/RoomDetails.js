@@ -93,7 +93,7 @@ const RoomDetails = () => {
               </div>
               <button
                 className='btn btn-lg btn-primary w-full'
-                onClick={() => navigate("/")}>
+                onClick={() => navigate("/Booking")}>
                 Book Nå for {price},-
               </button>
             </div>

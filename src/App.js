@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import RoomDetails from "./pages/RoomDetails";
 import Facilities from "./pages/Facilities";
 import About from "./pages/About";
+import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
 
 // React Router
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/About",
     element: <About />,
+  },
+  {
+    path: "Booking",
+    element: <Booking />,
   },
   {
     path: "/Contact",
