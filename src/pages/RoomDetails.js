@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 // Components
 import AdultsDropdown from "../components/AdultsDropdown";
 import CheckIn from "../components/CheckIn";
@@ -13,10 +13,13 @@ import ScrollToTop from "../components/ScrollToTop";
 import { RoomContext } from "../context/RoomContext";
 //icons
 import { FaCheck } from "react-icons/fa";
+import About from "./About";
 
 const RoomDetails = () => {
   const { rooms } = useContext(RoomContext);
   const { id } = useParams();
+
+  const navigate = useNavigate();
 
   // get room
   const room = rooms.find((room) => {
@@ -88,7 +91,9 @@ const RoomDetails = () => {
                   <KidsDropdown />
                 </div>
               </div>
-              <button className='btn btn-lg btn-primary w-full'>
+              <button
+                className='btn btn-lg btn-primary w-full'
+                onClick={() => navigate("/")}>
                 Book Nå for {price},-
               </button>
             </div>
