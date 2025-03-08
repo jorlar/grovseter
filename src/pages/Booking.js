@@ -14,15 +14,6 @@ import KidsDropdown from "../components/KidsDropdown";
 import { RoomContext } from "../context/RoomContext";
 
 const Booking = () => {
-  //   const { rooms } = useContext(RoomContext);
-  //   const { id } = useParams();
-  //   get room
-  //   const room = rooms.find((room) => {
-  //     return room.id === Number(id);
-  //   });
-  //   destructure room
-  //   const { price } = room;
-
   const form = useRef(null);
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -50,36 +41,10 @@ const Booking = () => {
   return (
     <>
       <HeroSlider />
+
       <div
         id='form-container'
         className='py-24 lg:p-5 mx-auto font-Encode-Sans'>
-        <div className='overflow-hidden'>
-          <motion.h3
-            initial={{ y: "200%" }}
-            transition={{ ease: [0.455, 0.03, 0.515, 0.955], duration: 1 }}
-            animate={{ y: 0 }}
-            className='text-center lg:text-5xl text-5xl mt-10 pb-6 font-bold'>
-            Bestill din Booking her
-          </motion.h3>
-        </div>
-        {/* Resevation */}
-        <div className='py-8 px-6 bg-accent/20 mb-12'>
-          <div className='flex flex-col space-y-4 mb-4'>
-            <h3>Din Booking</h3>
-            <div className='h-[60px]'>
-              <CheckIn />
-            </div>
-            <div className='h-[60px]'>
-              <CheckOut />
-            </div>
-            <div className='h-[60px]'>
-              <AdultsDropdown />
-            </div>
-            <div className='h-[60px]'>
-              <KidsDropdown />
-            </div>
-          </div>
-        </div>
         <motion.div
           transition={{ duration: 0.5, delay: 0.7 }}
           initial={{ opacity: 0 }}
@@ -88,6 +53,41 @@ const Booking = () => {
           <form method='POST' action='' ref={form} onSubmit={sendEmail}>
             <div className='mx-auto rounded-xl max-w-xl'>
               <div className='grid grid-cols-1 gap-6 label'>
+                <div className='flex flex-col space-y-4 mb-4'>
+                  <motion.h3
+                    initial={{ y: "200%" }}
+                    transition={{
+                      ease: [0.455, 0.03, 0.515, 0.955],
+                      duration: 1,
+                    }}
+                    animate={{ y: 0 }}
+                    className='text-center lg:text-5xl text-5xl mt-10 pb-6 font-bold'>
+                    Bestill din Booking her
+                  </motion.h3>
+                  <div className='py-8 px-6 bg-accent/20 mb-12'>
+                    <div className='h-[60px]'>
+                      <label htmlFor='CheckIn'>
+                        <CheckIn />
+                      </label>
+                    </div>
+
+                    <div className='h-[60px]'>
+                      <label htmlFor='CheckOut'>
+                        <CheckOut />
+                      </label>
+                    </div>
+                    <div className='h-[60px]'>
+                      <label htmlFor='Adults'>
+                        <AdultsDropdown />
+                      </label>
+                    </div>
+                    <div className='h-[60px]'>
+                      <label htmlFor='Kids'>
+                        <KidsDropdown />
+                      </label>
+                    </div>
+                  </div>
+                </div>
                 <div className='overflow-hidden'>
                   <label htmlFor='name' className='block border-b py-2 '>
                     <input
